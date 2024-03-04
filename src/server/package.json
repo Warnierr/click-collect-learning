@@ -1,0 +1,17 @@
+{
+  "name": "wkl_shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.11.10",
+    "nodemon": "^2.0.6"
+  }
+}
