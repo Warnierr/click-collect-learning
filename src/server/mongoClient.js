@@ -1,11 +1,8 @@
-module.exports = MongoDBClient
-
 require('dotenv').config(); 
 const mongoose = require('mongoose');
 
 const DB = 'marketplace'
-const URI = process.env.DB_URI 
-
+const URI = process.env.DB_URI
 const MongoDBClient = {
     initialize: () => {
         try {
@@ -18,4 +15,4 @@ const MongoDBClient = {
 
 }
 
-module.exports = MongoDBClient;
+module.exports = MongoDBClient

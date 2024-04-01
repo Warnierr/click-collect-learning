@@ -4,6 +4,9 @@ const cors = require("cors");
 const app = express();
 const PORT = 4000;
 
+const MongoDBClient = require('./mongoClient');
+const { mongo } = require("mongoose");
+
 app.use(cors());
 
 app.get("/", (req, res) => {
@@ -12,4 +15,5 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server up and running on port ${PORT}`);
+  MongoDBClient.initialize()
 });
