@@ -4,9 +4,14 @@ const product = require('../models/product');
 const {
     GraphQLSchema,
     GraphQLObjectType,
-    GraphQLString
+    GraphQLString,
     GraphQLList
 } = graphql
+
+const ProductType = new GraphQLObjectType({
+  name: 'Product',
+  fields: () => ({})
+})
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
